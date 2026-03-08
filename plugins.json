@@ -546,5 +546,9 @@
   {
     "id": "theStar7.Mai_Plan",
     "repositoryUrl": "https://github.com/theStar7/Mai_Plan"
+  },
+  {
+    "id": "bdbmzwsc.maibot-chat-summary-plugin",
+    "repositoryUrl": "https://github.com/Bdbmzwsc/maibot-chat-summary-plugin"
   }
 ]
