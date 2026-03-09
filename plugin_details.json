@@ -7808,5 +7808,232 @@
       },
       "id": "A_Dawn.A_model_router"
     }
+  },
+  {
+    "id": "nguspring.random-image-api-for-maibot",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "随机图片和色图插件（Random-image-api-for-MaiBot）",
+      "version": "1.0.0",
+      "description": "基于 Random-image-api 的随机 Pixiv 图片插件，支持标签筛选、多图获取、R18 自动识别、AI 过滤、合并转发、智能压缩、尺寸筛选等功能",
+      "author": {
+        "name": "NGU-SprinG",
+        "url": "https://github.com/nguspring"
+      },
+      "license": "MIT",
+      "host_application": {
+        "name": "MaiBot",
+        "min_version": "0.11.0"
+      },
+      "homepage_url": "https://github.com/nguspring/Random-image-api-for-MaiBot",
+      "repository_url": "https://github.com/nguspring/Random-image-api-for-MaiBot",
+      "keywords": [
+        "random",
+        "image",
+        "pixiv",
+        "setu",
+        "图片",
+        "随机图片"
+      ],
+      "categories": [
+        "Utility Tools"
+      ],
+      "default_locale": "zh-CN",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "extension",
+        "components": [
+          {
+            "type": "command",
+            "name": "RandomImageCommand",
+            "description": "随机获取 Pixiv 图片（支持多图）",
+            "pattern": "^(随机图片|来张图|来张涩图|随机涩图|来点图|setu)\\s*(?P<args>.*)?$",
+            "usage": "随机图片 [数量] [参数]",
+            "examples": [
+              "随机图片",
+              "来张图 3",
+              "来张图 #原神",
+              "随机图片 5 #碧蓝航线 noai",
+              "随机图片 r18 #FGO",
+              "来张涩图 noai 横屏",
+              "随机图片 uid:12345678 收藏>1000"
+            ]
+          }
+        ],
+        "features": [
+          "随机获取 Pixiv 高质量图片",
+          "支持一次获取多张图片（1-10张）",
+          "支持标签筛选（包含/排除）",
+          "支持 R18 内容控制",
+          "支持 AI 绘图过滤",
+          "支持横屏/竖屏/方形筛选",
+          "支持最低收藏数/浏览数筛选",
+          "支持指定画师 UID",
+          "合并转发格式发送（文字+图片一起）",
+          "用户冷却时间控制",
+          "图片预下载（先下载再发送，避免过期）",
+          "智能图片压缩（Pillow 自动压缩大图，发送速度提升数十倍）"
+        ],
+        "dependencies": {
+          "python": [
+            "Pillow"
+          ],
+          "plugins": [],
+          "external_api": [
+            "Random-image-api (https://i.mukyu.ru)"
+          ]
+        },
+        "config": {
+          "has_config": true,
+          "config_file": "config.toml"
+        }
+      },
+      "permissions": [
+        "send.image",
+        "send.text",
+        "send.forward",
+        "network.http"
+      ]
+    }
+  },
+  {
+    "id": "theStar7.Mai_Plan",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "麦麦计划表(Mai_Plan)",
+      "version": "1.0.0",
+      "description": "更有温度的日程提醒插件。敏锐捕捉闲聊中的每一份计划与需求，为用户自动创建提醒，支持多种提醒触发方式(一次性、循环、间隔)",
+      "author": {
+        "name": "theStar7",
+        "url": "https://github.com/theStar7"
+      },
+      "license": "MIT",
+      "host_application": {
+        "min_version": "0.12.0"
+      },
+      "homepage_url": "https://github.com/theStar7/Mai_Plan",
+      "repository_url": "https://github.com/theStar7/Mai_Plan",
+      "keywords": [
+        "日程计划",
+        "自动提醒",
+        "记录"
+      ],
+      "categories": [
+        "Utility Tools",
+        "Entertainment & Interaction"
+      ],
+      "default_locale": "zh-CN",
+      "locales_path": "_locales",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "chat",
+        "components": [
+          {
+            "type": "command",
+            "name": "mai_plan_command",
+            "description": "管理计划任务：/mai_plan help|list|cancel",
+            "pattern": "^/mai_plan(?:\\s+(?P<args>.*))?$"
+          },
+          {
+            "type": "event_handler",
+            "name": "mai_plan_startup_handler",
+            "description": "Mai_Plan 启动时初始化提醒调度器"
+          },
+          {
+            "type": "event_handler",
+            "name": "mai_plan_stop_handler",
+            "description": "Mai_Plan 停止时关闭提醒调��器"
+          },
+          {
+            "type": "tool",
+            "name": "create_plan_task_tool",
+            "description": "创建计划任务（LLM 工具调用）"
+          },
+          {
+            "type": "tool",
+            "name": "delete_plan_task_tool",
+            "description": "删除计划任务（LLM 工具调用）"
+          },
+          {
+            "type": "tool",
+            "name": "modify_plan_task_tool",
+            "description": "修改计划任务（LLM 工具调用）"
+          },
+          {
+            "type": "tool",
+            "name": "list_plan_tasks_tool",
+            "description": "查询计划任务列表（LLM 工具调用）"
+          }
+        ],
+        "features": [
+          "聊天内容自动生成计划任务",
+          "定时触发自动提醒",
+          "支持查看和取消任务",
+          "任务文件本地持久化",
+          "支持 LLM 工具调用（创建/修改/删除/查询任务）",
+          "基于 cron 表达式的循环日程（每天/每周/每月/自定义周期）",
+          "APScheduler 事件驱动调度，低开销高精度"
+        ]
+      },
+      "id": "theStar7.Mai_Plan"
+    }
+  },
+  {
+    "id": "bdbmzwsc.maibot-chat-summary-plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "聊天总结",
+      "version": "1.0.0",
+      "description": "根据聊天记录，生成聊天总结",
+      "author": {
+        "name": "雪碧",
+        "url": "https://github.com/Bdbmzwsc"
+      },
+      "homepage_url": "https://github.com/Bdbmzwsc/maibot-chat-summary-plugin",
+      "repository_url": "https://github.com/HyperSharkawa/maibot-chat-summary-plugin",
+      "license": "GPLv3",
+      "host_application": {
+        "min_version": "0.12.0"
+      },
+      "keywords": [
+        "分析"
+      ],
+      "categories": [
+        "Data Analysis & Insights"
+      ],
+      "default_locale": "CN",
+      "locales_path": "_locales",
+      "id": "bdbmzwsc.maibot-chat-summary-plugin"
+    }
+  },
+  {
+    "id": "higekibaka.recall_response_plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "撤回消息响应插件",
+      "version": "1.0.1",
+      "description": "检测群聊撤回事件，有概率让麦麦发出一句符合人设的自然反应",
+      "author": {
+        "name": "higekibaka",
+        "url": "https://github.com/higekibaka"
+      },
+      "license": "MIT",
+      "host_application": {
+        "min_version": "0.12.0"
+      },
+      "homepage_url": "https://github.com/higekibaka/recall_response_plugin",
+      "repository_url": "https://github.com/higekibaka/recall_response_plugin",
+      "keywords": [
+        "撤回",
+        "群组",
+        "互动",
+        "梗"
+      ],
+      "categories": [
+        "Entertainment & Interaction"
+      ],
+      "default_locale": "zh-CN",
+      "id": "higekibaka.recall_response_plugin"
+    }
   }
 ]
