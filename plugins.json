@@ -562,5 +562,9 @@
   {
     "id": "grok-search-plugin",
     "repositoryUrl": "https://github.com/Anderwer/grok-search-plugin"
+  },
+  {
+    "id": "NymphSong.MaiHoYoGetCos_plugin",
+    "repositoryUrl": "https://github.com/NymphSong/MaiHoYoGetCos_plugin"
   }
 ]
