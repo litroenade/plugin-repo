@@ -554,5 +554,9 @@
   {
     "id": "higekibaka.recall_response_plugin",
     "repositoryUrl": "https://github.com/higekibaka/recall_response_plugin"
+  },
+  {
+    "id": "XXXxx7258.moegirl_wiki_plugin",
+    "repositoryUrl": "https://github.com/XXXxx7258/moegirl_wiki_plugin"
   }
 ]
