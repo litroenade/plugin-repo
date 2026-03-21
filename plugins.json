@@ -566,5 +566,9 @@
   {
     "id": "NymphSong.MaiHoYoGetCos_plugin",
     "repositoryUrl": "https://github.com/NymphSong/MaiHoYoGetCos_plugin"
+  },
+  {
+    "id": "maibot_music_plugin",
+    "repositoryUrl": "https://github.com/hydrogen-francium/maibot_music_plugin"
   }
 ]
