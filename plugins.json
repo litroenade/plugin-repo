@@ -570,5 +570,9 @@
   {
     "id": "maibot_music_plugin",
     "repositoryUrl": "https://github.com/hydrogen-francium/maibot_music_plugin"
+  },
+  {
+    "id": "custom_knowledge_base_plugin",
+    "repositoryUrl": "https://github.com/hmr-BH/custom_knowledge_base_plugin"
   }
 ]
