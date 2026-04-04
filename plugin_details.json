@@ -514,7 +514,7 @@
             "endpoint": "ModelScope Gradio API",
             "authentication": "无需认证（公开Gradio接口）",
             "limitations": "依赖ModelScope服务可用性",
-            "features": "3秒声音克隆、17种方言支持、情感语速控制、自然语言指令"
+            "features": "3秒声音克隆���17种方言支持、情感语速控制、自然语言指令"
           }
         }
       },
@@ -6656,7 +6656,7 @@
           "refresh_interval_minutes": {
             "type": "integer",
             "default": 30,
-            "description": "人物画像定时刷新���期（分钟）"
+            "description": "人物画像定时刷���周期（分钟）"
           },
           "active_window_hours": {
             "type": "number",
