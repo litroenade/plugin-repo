@@ -4975,7 +4975,7 @@
     }
   },
   {
-    "id": "MaiBot-Discord-Adapter",
+    "id": "litroenade.MaiBot-Discord-Adapter",
     "manifest": {
       "manifest_version": 1,
       "name": "Discord适配器",
