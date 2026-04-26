@@ -631,7 +631,7 @@
           "v3.2.0新增CosyVoice后端支持（阿里云语音合成，支持17种方言和3秒声音克隆）",
           "v3.1.0新增豆包语音后端支持",
           "v3.1.0重构为模块化架构，提升代码可维护性",
-          "配置文件需要重新生成，原配置需手动��移",
+          "配置文件需要重新生成，原配置需手动迁移",
           "建议备份旧插件配置后再迁移",
           "AI Voice音色映射保持兼容",
           "GSV2P API配置需重新填写Token",
@@ -5463,7 +5463,7 @@
           "三种自拍模式(standard/mirror/photo)",
           "SSE流式响应支持",
           "智能参考搜索(内置Bing搜图)",
-          "独���生图接口(generate_image_standalone)"
+          "独立生图接口(generate_image_standalone)"
         ]
       },
       "id": "selfie_painter"
@@ -6579,7 +6579,7 @@
               "type": "string"
             },
             "default": [],
-            "description": "聊天流 ID 列表���支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
+            "description": "聊天流 ID 列���。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
           }
         },
         "person_profile": {
