@@ -1682,7 +1682,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "xinxinxin0.bilibili-video-sender",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "name": "麦麦发 B 站视频",
       "description": "让麦麦解析 B 站视频链接并发送，群聊私聊都可用",
       "author": {
@@ -2903,7 +2903,7 @@
     "id": "custom_commands_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.2.3",
+      "version": "2.2.5",
       "name": "自定义命令插件 | CustomCommands Plugin",
       "description": "一个允许你通过聊天命令动态添加、删除、列出和触发自定义回复的强大插件，支持群组数据隔离与自定义分组映射。",
       "author": {
@@ -2930,7 +2930,8 @@
         "send.text",
         "send.image",
         "config.get",
-        "api.call"
+        "api.call",
+        "component.reload_plugin"
       ],
       "i18n": {
         "default_locale": "zh-CN",
@@ -3889,7 +3890,7 @@
           "⚡ 并发优化：超时任务主动取消，生成速度提升50%",
           "🎨 自定义Prompt：支持配置自定义提示词影响日程生成",
           "🤖 基于Bot人设智能生成每日日程（8-15个活动）",
-          "⏰ 定时自动生成（默认每天00:30）",
+          "⏰ 定时自动生成（默��每天00:30）",
           "💬 对话中自然提到当前活动（如\"这会儿正吃午饭呢\"）",
           "📊 支持文字和图片两种日程展示格式",
           "🔄 多轮生成机制，可选启用提升质量",
@@ -3932,7 +3933,7 @@
         },
         {
           "type": "command",
-          "description": "���看日程（文字格式）",
+          "description": "查看日程（文字格式）",
           "example": "/plan status"
         },
         {
