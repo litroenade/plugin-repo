@@ -1645,7 +1645,7 @@
       "manifest_version": 2,
       "version": "2.1.0",
       "name": "B站动态推送",
-      "description": "适用于MaiBot的B站动态订阅与直播状态自动推送插件（旧版请去仓库分支）",
+      "description": "适用于MaiSaka的B站动态订阅与直播状态自动推送插件（旧版请去仓库分支）",
       "author": {
         "name": "白狐",
         "url": "https://github.com/whitefox20011120"
@@ -1682,7 +1682,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "xinxinxin0.bilibili-video-sender",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "name": "麦麦发 B 站视频",
       "description": "让麦麦解析 B 站视频链接并发送，群聊私聊都可用",
       "author": {
@@ -3890,7 +3890,7 @@
           "⚡ 并发优化：超时任务主动取消，生成速度提升50%",
           "🎨 自定义Prompt：支持配置自定义提示词影响日程生成",
           "🤖 基于Bot人设智能生成每日日程（8-15个活动）",
-          "⏰ 定时自动生成（默��每天00:30）",
+          "⏰ 定时自动生成（默认每天00:30）",
           "💬 对话中自然提到当前活动（如\"这会儿正吃午饭呢\"）",
           "📊 支持文字和图片两种日程展示格式",
           "🔄 多轮生成机制，可选启用提升质量",
@@ -3933,7 +3933,7 @@
         },
         {
           "type": "command",
-          "description": "查看日程（文字格式）",
+          "description": "���看日程（文字格式）",
           "example": "/plan status"
         },
         {
@@ -6658,7 +6658,7 @@
               "type": "string"
             },
             "default": [],
-            "description": "聊天流 ID 列表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
+            "description": "聊天流 ID ���表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
           }
         },
         "person_profile": {
