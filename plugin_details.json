@@ -342,6 +342,40 @@
     }
   },
   {
+    "id": "A0000Xz.MaiBot-Curfew-Plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "宵禁插件",
+      "version": "1.4.6",
+      "description": "在机器人是QQ群聊管理员的情况下实现了自动宵禁功能",
+      "author": {
+        "name": "A肆零西烛",
+        "url": "https://github.com/A0000Xz"
+      },
+      "license": "GPL-v3.0-or-later",
+      "host_application": {
+        "min_version": "0.9.1",
+        "max_version": "0.11.1"
+      },
+      "keywords": [
+        "mute",
+        "moderation",
+        "admin",
+        "management",
+        "group",
+        "curfew"
+      ],
+      "categories": [
+        "Moderation",
+        "Group Management",
+        "Admin Tools"
+      ],
+      "repository_url": "https://github.com/A0000Xz/MaiBot-Curfew-Plugin",
+      "default_locale": "zh-CN",
+      "locales_path": "_locales"
+    }
+  },
+  {
     "id": "A0000Xz.MaiBot-AntiPoke-Plugin",
     "manifest": {
       "manifest_version": 1,
@@ -758,6 +792,58 @@
     }
   },
   {
+    "id": "khiqwq.silent_mode_plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "麦麦闭嘴（Silent Mode）",
+      "version": "1.0.5",
+      "description": "触发 \"麦麦闭嘴\" 后让机器人在群聊中安静一段时间，可用 \"麦麦张嘴\" 解除。",
+      "author": {
+        "name": "风花叶",
+        "url": "https://github.com/khiqwq"
+      },
+      "license": "AGPL-v3.0",
+      "homepage_url": "https://github.com/khiqwq/silent_mode_plugin",
+      "repository_url": "https://github.com/khiqwq/silent_mode_plugin",
+      "host_application": {
+        "min_version": "0.8.0",
+        "max_version": "0.11.0"
+      },
+      "keywords": [
+        "silent",
+        "mute",
+        "shutup",
+        "maibot",
+        "群聊"
+      ],
+      "categories": [
+        "Moderation",
+        "Management"
+      ],
+      "default_locale": "zh-CN",
+      "config_file_name": "config.toml",
+      "plugin_info": {
+        "components": [
+          {
+            "type": "command",
+            "name": "shutup",
+            "description": "触发静音"
+          },
+          {
+            "type": "command",
+            "name": "open_mouth",
+            "description": "解除静音"
+          },
+          {
+            "type": "action",
+            "name": "silent_filter",
+            "description": "静音期间阻止回复"
+          }
+        ]
+      }
+    }
+  },
+  {
     "id": "1021143806.mais_art_journal",
     "manifest": {
       "manifest_version": 2,
@@ -833,6 +919,80 @@
       "host_application": {
         "min_version": "0.9.0",
         "max_version": "0.10.1"
+      }
+    }
+  },
+  {
+    "id": "internetsb.Maizone",
+    "manifest": {
+      "manifest_version": 2,
+      "id": "internetsb.maizone",
+      "version": "3.0.2",
+      "name": "Maizone（麦麦空间）",
+      "description": "让麦麦阅读、评论、点赞、发送QQ空间。为插件提供发送说说接口",
+      "author": {
+        "name": "internetsb",
+        "url": "https://github.com/internetsb"
+      },
+      "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/internetsb/Maizone"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "1.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [
+        {
+          "type": "plugin",
+          "id": "maibot-team.napcat-adapter",
+          "version_spec": ">=0.1.0"
+        },
+        {
+          "type": "python_package",
+          "name": "bs4",
+          "version_spec": ">=0.0.1"
+        },
+        {
+          "type": "python_package",
+          "name": "json5",
+          "version_spec": ">=0.0.1"
+        },
+        {
+          "type": "python_package",
+          "name": "requests",
+          "version_spec": ">=0.0.1"
+        },
+        {
+          "type": "python_package",
+          "name": "httpx",
+          "version_spec": ">=0.0.1"
+        }
+      ],
+      "capabilities": [
+        "send.text",
+        "llm.generate",
+        "config.get",
+        "llm.get_available_models",
+        "message.get_recent",
+        "api.call",
+        "emoji.get_by_description",
+        "database.get"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN"
+      },
+      "display": {
+        "icon": {
+          "type": "local",
+          "value": "icon.png",
+          "fallback": "package",
+          "background": "#1f2937"
+        }
       }
     }
   },
@@ -937,6 +1097,26 @@
           }
         ]
       }
+    }
+  },
+  {
+    "id": "foxcyber907.balance_plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "balance_plugin",
+      "version": "1.0.0",
+      "description": "硅基流动余额",
+      "author": {
+        "name": "雅诺狐",
+        "url": "https://github.com/foxcyber907/maim_balance_plugin"
+      },
+      "license": "MIT",
+      "host_application": {
+        "min_version": "0.8.0",
+        "max_version": "0.8.10"
+      },
+      "default_locale": "zh-CN",
+      "locales_path": "_locales"
     }
   },
   {
@@ -1335,7 +1515,7 @@
     "id": "XXXxx7258.google_search_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "4.0.1",
+      "version": "4.0.2",
       "name": "麦麦联网插件（search plugin）",
       "description": "支持多个搜索引擎的网络搜索、缩写翻译以及图片搜索，并提供自动降级能力。",
       "author": {
@@ -4488,6 +4668,24 @@
     }
   },
   {
+    "id": "Pekofirst.MCping-for-Maibot",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "mcping 插件",
+      "version": "1.0.4",
+      "description": "一个简单的我的世界服务器查询插件",
+      "author": {
+        "name": "Pekofirst",
+        "url": "https://github.com/Pekofirst"
+      },
+      "license": "MIT",
+      "host_application": {
+        "min_version": "0.10.3"
+      },
+      "repository_url": "https://github.com/Pekofirst/MCping-for-Maibot"
+    }
+  },
+  {
     "id": "HyperSharkawa.like_plugin",
     "manifest": {
       "manifest_version": 1,
@@ -5969,6 +6167,35 @@
     }
   },
   {
+    "id": "HyperSharkawa.msg_react_plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "麦麦贴表情插件",
+      "version": "1.1.1",
+      "description": "让麦麦能在群聊中贴表情",
+      "author": {
+        "name": "鲨鱼",
+        "url": "https://github.com/HyperSharkawa"
+      },
+      "license": "MIT",
+      "host_application": {
+        "min_version": "0.12.0"
+      },
+      "homepage_url": "https://github.com/HyperSharkawa/maibot-msg-react-plugin",
+      "repository_url": "https://github.com/HyperSharkawa/maibot-msg-react-plugin",
+      "keywords": [
+        "贴表情",
+        "群组",
+        "互动"
+      ],
+      "categories": [
+        "Entertainment & Interaction"
+      ],
+      "default_locale": "zh-CN",
+      "locales_path": "_locales"
+    }
+  },
+  {
     "id": "sansenjian.quick_date_perception",
     "manifest": {
       "manifest_version": 1,
@@ -6930,7 +7157,7 @@
           {
             "type": "event_handler",
             "name": "mai_plan_stop_handler",
-            "description": "Mai_Plan 停止时关闭提醒调��器"
+            "description": "Mai_Plan 停止时关闭提醒调度器"
           },
           {
             "type": "tool",
