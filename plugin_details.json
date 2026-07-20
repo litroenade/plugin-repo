@@ -7159,7 +7159,7 @@
           {
             "type": "event_handler",
             "name": "mai_plan_stop_handler",
-            "description": "Mai_Plan 停止时关闭提醒调度器"
+            "description": "Mai_Plan 停止时关闭提���调度器"
           },
           {
             "type": "tool",
