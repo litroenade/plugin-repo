@@ -5791,7 +5791,7 @@
                 "default": ""
               }
             },
-            "description": "Web 导入中心配置（队列、并发、大小限制、鉴权）"
+            "description": "Web 导入中心配置（队列、并发、大小限制、鉴权���"
           },
           "tuning": {
             "type": "object",
@@ -5989,7 +5989,7 @@
           "active_window_hours": {
             "type": "number",
             "default": 72,
-            "description": "活跃人物窗口（小时）"
+            "description": "活跃人物��口（小时）"
           },
           "max_refresh_per_cycle": {
             "type": "integer",
