@@ -3214,7 +3214,7 @@
             "name": "chat_summary",
             "description": "生成聊天记录总结",
             "pattern": "/summary",
-            "usage": "/summary [今天|昨天] 或 /summary @用户名/QQ号 [今天|昨天]"
+            "usage": "/summary [今天|昨天] 或 /summary @用户名/QQ号 [今天|��天]"
           },
           {
             "type": "event_handler",
@@ -5842,7 +5842,7 @@
           "top_k_evidence": {
             "type": "integer",
             "default": 12,
-            "description": "构建画像时的证���数量上限"
+            "description": "构建画像时的证据数量上限"
           }
         },
         "memory": {
