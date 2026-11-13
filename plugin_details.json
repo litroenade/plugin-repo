@@ -49,7 +49,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "github.a0000xz.maibot-tarots-plugin",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "name": "塔罗工坊",
       "description": "面向 MaiBot 新版插件系统的塔罗占卜插件：11 种牌阵、可自定义牌阵与牌组、桌布风布局图、麦麦人设解牌；支持独立牌组资源包「灵契秘仪」（首次启用下载并校验）",
       "author": {
@@ -5403,7 +5403,7 @@
           "extraction_model": {
             "type": "string",
             "default": "auto",
-            "description": "指定知识抽取模型名称 (对应 model_config.toml 中的 name)"
+            "description": "指定知识抽取模型名�� (对应 model_config.toml 中的 name)"
           }
         },
         "summarization": {
@@ -5454,7 +5454,7 @@
             "default": [
               "04:00"
             ],
-            "description": "每日自动导入的时间点列表 (24小时制)"
+            "description": "每日��动导入的时间点列表 (24小时制)"
           }
         },
         "filter": {
