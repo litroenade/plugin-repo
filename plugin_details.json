@@ -5403,7 +5403,7 @@
           "extraction_model": {
             "type": "string",
             "default": "auto",
-            "description": "指定知识抽取模型名�� (对应 model_config.toml 中的 name)"
+            "description": "指定知识抽取模型名称 (对应 model_config.toml 中的 name)"
           }
         },
         "summarization": {
@@ -5454,7 +5454,7 @@
             "default": [
               "04:00"
             ],
-            "description": "每日��动导入的时间点列表 (24小时制)"
+            "description": "每日自动导入的时间点列表 (24小时制)"
           }
         },
         "filter": {
